@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши мастера</title>
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./thirdStyle.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <nav class="header-menu">
+                    <ul class="header-menu-list">
+                        <li>
+                            <a href="/index.html" id="hub" class="header-menu-link">Главная</a>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <button id="open-stock-modal-btn" type="button" class="header-button">Акции</button>
+                                </div>
+
+                                <div class="modal" id="stock-modal">
+                                    <div class="modal__box">
+                                        <button class="closeBtn" id="close-stock-modal-btn" type="button">
+                                            <img class="modalIcon" src="./icons/exit-svgrepo-com.svg" alt="">
+                                        </button>
+                                        <h2 class="modal_title">Акции в нашем салоне</h2>
+                                        <ol>
+                                            <li class="modal-price">Комплекс стрижка+борода 1600₽</li>
+                                            <li class="modal-price">Стрижка отец+сын 1600₽</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#contacts" class="header-menu-link">Контакты</a>
+                        </li>
+                        <li>
+                            <button id="open-menu-btn" class="header-button active">Мастера</button>
+                            <span class="arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li>
+                                    <a href="/secondPage/secondIndex.html" class="sub-menu__link">Стрижки</a>
+                                </li>
+                                <li>
+                                    <a href="/fourthPage/fourthIndex.html" class="sub-menu__link">Педикюр</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="masters">
+                <article class="masters-info">
+                    <img class="master-image" src="./images/manicuremaster1.jpg" alt="">
+                    <h1 class="master-name">Екатерина Гончаренко</h1>
+                    <p class="master-about">Стаж: 2 года</p>
+                    <video src="./videos/manicurevideo1.mp4" autoplay loop muted class="master-video"></video>
+                </article>
+
+                <article class="masters-info">
+                    <img class="master-image" src="./images/manicuremaster2.jpg" alt="">
+                    <h1 class="master-name">Лилия Мосякина</h1>
+                    <p class="master-about-2">Стаж: 8 лет</p>
+                    <video src="./videos/manicurevideo2.mp4" autoplay loop muted class="master-video"></video>
+                </article>
+
+                <article class="masters-info">
+                    <img class="master-image" src="./images/manicuremaster3.jpg" alt="">
+                    <h1 class="master-name">Алена Ким</h1>
+                    <p class="master-about">Стаж: 7 лет</p>
+                    <video src="./videos/manicurevideo3.mp4" autoplay loop muted class="master-video"></video>
+                </article>
+
+                <article class="masters-info">
+                    <img class="master-image" src="./images/manicuremaster4.jpg" alt="">
+                    <h1 class="master-name">Екатерина Кузнецова</h1>
+                    <p class="master-about-4">Стаж: 11 лет</p>
+                    <video src="./videos/manicurevideo4.mp4" autoplay loop muted class="master-video"></video>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hub"><img src="./images/dilogo.png" alt="logo" loading="lazy" class="footer-image"
+                        width='200px' ;></a>
+
+
+                <div class="footer-contacts contact" id="contacts">
+                    <h4 class="footer-title ">
+                        Контакты
+                    </h4>
+                    <a href="tel:+79112983712" class="footer-info">+7 (911) 298-37-12</a>
+                    <a class="gis2 footer-info" href="https://2gis.ru/spb/branches/70000001069287144" target="_blank"
+                        rel="noopener noreferrer">Мы на карте</a>
+                </div>
+
+                <div class="footer-worktime">
+                    <h4 class="footer-title">
+                        Режим работы
+                    </h4>
+
+                    <h5 class="footer-info">
+                        C 10:00 до 22:00 (Пн-Вс)
+                    </h5>
+                </div>
+
+                <div class="footer-link contact">
+                    <h4 class="footer-title inst">
+                        Мы в Instagram
+                    </h4>
+
+                    <a href="/" target="_blank"><img src="/icons/instlogo.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+        integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/scripts.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('a[href^="#"]').click(function () {
+                let target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 500);
+                return false;
+            });
+
+        });
+    </script>
+</body>
+
+</html>
