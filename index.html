@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIVINE</title>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <nav class="header-menu">
+                    <ul class="header-menu-list">
+                        <li>
+                            <a href="#!" id="hub" class="header-menu-link active">Главная</a>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <button id="open-stock-modal-btn" type="button" class="header-button">Акции</button>
+                                </div>
+
+                                <div class="modal" id="stock-modal">
+                                    <div class="modal__box">
+                                        <button class="closeBtn" id="close-stock-modal-btn" type="button">
+                                            <img class="modalIcon" src="./icons/exit-svgrepo-com.svg" alt="">
+                                        </button>
+                                        <h2 class="modal_title">Акции в нашем салоне</h2>
+                                        <ol>
+                                            <li class="modal-price">Комплекс стрижка+борода 1600₽</li>
+                                            <li class="modal-price">Стрижка отец+сын 1600₽</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#review" class="header-menu-link">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#contacts" class="header-menu-link">Контакты</a>
+                        </li>
+                        <li>
+                            <button id="open-menu-btn" class="header-button">Мастера</button>
+                            <span class="arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li>
+                                    <a href="./secondPage/secondIndex.html" class="sub-menu__link">Стрижки</a>
+                                </li>
+                                <li>
+                                    <a href="./thirdPage/thirdIndex.html" class="sub-menu__link">Маникюр</a>
+                                </li>
+                                <li>
+                                    <a href="./fourthPage/fourthIndex.html" class="sub-menu__link">Педикюр</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <div class="container">
+            <section class="section-content">
+                <div class="section-title element-animation">
+                    <div class="section-info">
+                        <div class="section-info-text">
+                            Уютная атмосфера
+                        </div>
+                        <img src="./icons/divan.svg" alt="divan" class="section-information">
+                    </div>
+                    <div class="section-info">
+                        <div class="section-info-text">
+                            Рядом с метро
+                        </div>
+                        <img src="./icons/map.svg" alt="map" class="section-information">
+                    </div>
+                    <div class="section-info">
+                        <div class="section-info-text">
+                            Заботливые мастера
+                        </div>
+                        <img src="./icons/heart.svg" alt="heart" class="section-information">
+                    </div>
+                    <div class="section-info">
+                        <div class="section-info-text">
+                            Современные технологии
+                        </div>
+                        <img src="./icons/hc.svg" alt="hc" class="section-information">
+                    </div>
+                </div>
+
+
+
+                <div class="section-cards">
+                    <div class="section-card">
+                        <img src="./icons/haircut.svg" alt="haircut" class="section-card-image element-animation">
+                        <div class="section-card-text">
+                            <button id="open-modal-btn" type="button"
+                                class="section-button element-animation">Стрижки</button>
+                        </div>
+
+                        <div class="modal" id="haircut-modal">
+                            <div class="modal__box">
+                                <button class="closeBtn" id="close-haircut-modal-btn" type="button">
+                                    <img class="modalIcon" src="./icons/exit-svgrepo-com.svg" alt="">
+                                </button>
+                                <h2 class="modal_title">Прайс-лист на парикмахерские услуги</h2>
+
+                                <ol>
+                                    <li class="modal-price">Мужская стрижка 900₽</li>
+                                    <li class="modal-price">Оформление бороды машинкой 700₽</li>
+                                    <li class="modal-price">Детская стрижка 700₽</li>
+                                    <li class="modal-price">Стрижка 1-2 насадки (без фейда) 600₽</li>
+                                    <li class="modal-price">Окантовка волос 400₽</li>
+                                    <li class="modal-price">Бритье головы опасной бритвой 900₽</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-card">
+                        <img src="./icons/manicure.svg" alt="manicure" class="section-card-image element-animation">
+
+                        <div class="section-card-text">
+                            <button id="open-manicure-modal-btn" type="button"
+                                class="section-button element-animation">Маникюр</button>
+                        </div>
+
+                        <div class="modal" id="manicure-modal">
+                            <div class="modal__box">
+                                <button class="closeBtn" id="close-manicure-modal-btn" type="button">
+                                    <img class="modalIcon" src="./icons/exit-svgrepo-com.svg" alt="">
+                                </button>
+                                <h2 class="modal_title">Прайс-лист на маникюр</h2>
+
+                                <ol>
+                                    <li class="modal-price">Маникюр 800₽</li>
+                                    <li class="modal-price">Придание формы ногтям 200₽ - 400₽</li>
+                                    <li class="modal-price">Маникюр с покрытием гель лак 1600₽</li>
+                                    <li class="modal-price">Покрытие обычным лаком 400₽</li>
+                                    <li class="modal-price">Покрытие гельлак (без маникюра) 1000₽</li>
+                                    <li class="modal-price">Экспресс-маникюр/детский 600₽</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-card">
+                        <img src="./icons/pedicure.svg" alt="pedicure" class="section-card-image element-animation">
+
+                        <div class="section-card-text">
+                            <button id="open-pedicure-modal-btn" type="button"
+                                class="section-button element-animation">Педикюр</button>
+                        </div>
+
+                        <div class="modal" id="pedicure-modal">
+                            <div class="modal__box">
+                                <button class="closeBtn" id="close-pedicure-modal-btn" type="button">
+                                    <img class="modalIcon" src="./icons/exit-svgrepo-com.svg" alt="">
+                                </button>
+                                <h2 class="modal_title">Прайс-лист на педикюр</h2>
+
+                                <ol>
+                                    <li class="modal-price">Педикюр полный 1300₽</li>
+                                    <li class="modal-price">Полный педикюр с покрытием Гельлак 2100₽</li>
+                                    <li class="modal-price">Педикюр экспресс/с Гельлаком 1000₽/1700₽</li>
+                                    <li class="modal-price">Педикюр мужской 1600₽</li>
+                                    <li class="modal-price">Натоптыш/мозоль/вросший ноготь 100₽/200₽/200₽</li>
+                                    <li class="modal-price">Обработка грибка и дистрофии ногтей 500₽</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="review" class="splideSlider container">
+                <h1 class="slider__title element-animation" id="sliderTitle">
+                    Отзывы наших клиентов
+                </h1>
+                <article id="mySlider" class="splide element-animation" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="splide__slide--name">
+                                    <span><img class="splide__slide--photo" src="./images/clientsReview/client1.png" alt=""></span>
+                                    Алексей Бармыков
+                                </div>
+                                <div class="splide__slide--review">
+                                    Мастер Эдгар быстро и отлично стрижёт. Хожу к нему третий год. И после этого
+                                    мастера, постоянно остаюсь довольным!
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide--name">
+                                    <span><img class="splide__slide--photo" src="./images/clientsReview/client3.png" alt=""></span>
+                                    София Качаева
+                                </div>
+                                <div class="splide__slide--review">
+                                    Хочу сказать, что и качество маникюра, и скорость, и качество покрытия - все на
+                                    высоте!
+                                    Всегда вежливое и бережное отношение к клиентам.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide--name">
+                                    <span><img class="splide__slide--photo" src="./images/clientsReview/client4.png" alt=""></span>
+                                    Наталья Черникова
+                                </div>
+                                <div class="splide__slide--review">
+                                    Была на маникюре у Екатерины. Чудесная душевная девушка и мастер своего дела. Ушла с
+                                    прекрасным настроением и суперским маникюром. Спасибо огромное!
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide--name">
+                                    <span><img class="splide__slide--photo" src="./images/clientsReview/client2.png" alt=""></span>
+                                    Жека Жумабеков
+                                </div>
+                                <div class="splide__slide--review">
+                                    С января 2022 подстригаюсь здесь вместе с двумя своими сыновьями. Ни разу не
+                                    пожалел. Классно стригут и душевно общаются, лучшее соотношение цена/качество. Всем
+                                    рекомендую.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide--name">
+                                    <span><img class="splide__slide--photo" src="./images/clientsReview/client5.png" alt=""></span>
+                                    ​Александр Логинов
+                                </div>
+                                <div class="splide__slide--review">
+                                    Герман - профессионал. Видно, что человек любит свое дело. Очень ответственно
+                                    подходит
+                                    ко всем деталям. Перфекционизм на высшем уровне.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide--name">
+                                    <span><img class="splide__slide--photo" src="./images/clientsReview/client6.png" alt=""></span>
+                                    Роман Колесников
+                                </div>
+                                <div class="splide__slide--review">
+                                    Хожу на постоянке к Александру, отлично стрижёт, правда. Тем-более, за такой прайс.
+                                    Езжу
+                                    сюда из другого района.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide--name">
+                                    <span><img class="splide__slide--photo" src="./images/clientsReview/client7.png" alt=""></span>
+                                    Михаил Трунов
+                                </div>
+                                <div class="splide__slide--review">
+                                    Эдгар - лучший барбер. Стригусь у него с открытия. Очень доволен. Отличный
+                                    специалист
+                                    и собеседник!
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide--name">
+                                    <span><img class="splide__slide--photo" src="./images/clientsReview/client8.png" alt=""></span>
+                                    Никита Одегов
+                                </div>
+                                <div class="splide__slide--review">
+                                    Остаюсь верен Владимиру не первый год. Мастер своего дела со своим чувством юмора.
+                                    Может
+                                    поддержать беседу и в то же время сделать вам стрижку, так, как нужно.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide--name">
+                                    <span><img class="splide__slide--photo" src="./images/clientsReview/client9.png" alt=""></span>
+                                    Артём Ваульчиков
+                                </div>
+                                <div class="splide__slide--review">
+                                    Рекомендую барбера Александра, приезжаю специально с другого конца города, стрижкой
+                                    всегда доволен!
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <section class="section-works">
+                <h3 class="section-works-title element-animation">
+                    Наши работы
+                </h3>
+
+                <div class="section-works-links element-animation">
+                    <button id="btn1" class="section-works-link">Стрижки</button>
+                    <button id="btn2" class="section-works-link">Маникюр</button>
+                    <button id="btn3" class="section-works-link">Педикюр</button>
+                    <button id="btn4" class="section-works-link">Скрыть</button>
+                </div>
+
+                <div id="haircuts" class="section-works-examples">
+                    <img src="./images/haircutExamples/4.jpg" alt="1" class="section-works-example element-animation">
+                    <img src="./images/haircutExamples/5.jpg" alt="2" class="section-works-example element-animation">
+                    <img src="./images/haircutExamples/6.jpg" alt="3" class="section-works-example element-animation">
+                    <img src="./images/haircutExamples/1.jpg" alt="4" class="section-works-example element-animation">
+                    <img src="./images/haircutExamples/2.jpg" alt="5" class="section-works-example element-animation">
+                    <img src="./images/haircutExamples/3.jpg" alt="6" class="section-works-example element-animation">
+                    <img src="./images/haircutExamples/7.jpg" alt="7" class="section-works-example element-animation">
+                    <img src="./images/haircutExamples/8.jpg" alt="8" class="section-works-example element-animation">
+                    <img src="./images/haircutExamples/9.jpg" alt="9" class="section-works-example element-animation">
+                </div>
+
+                <div id="manicures" class="section-works-examples">
+                    <img src="./images/manicureExamples/manicure1.jpg" alt="1" class="section-works-manicure-example element-animation">
+                    <img src="./images/manicureExamples/manicure2.jpg" alt="2" class="section-works-manicure-example element-animation">
+                    <img src="./images/manicureExamples/manicure3.jpg" alt="3" class="section-works-manicure-example element-animation">
+                    <img src="./images/manicureExamples/manicure4.jpg" alt="4" class="section-works-manicure-example element-animation">
+                    <img src="./images/manicureExamples/manicure5.jpg" alt="5" class="section-works-manicure-example element-animation">
+                    <img src="./images/manicureExamples/manicure6.jpg" alt="6" class="section-works-manicure-example element-animation">
+                    <img src="./images/manicureExamples/manicure7.jpg" alt="7" class="section-works-manicure-example element-animation">
+                    <img src="./images/manicureExamples/manicure8.jpg" alt="8" class="section-works-manicure-example element-animation">
+                    <img src="./images/manicureExamples/manicure9.jpg" alt="9" class="section-works-manicure-example element-animation">
+                </div>
+
+                <div id="pedicures" class="section-works-examples">
+                    <img src="./images/pedicureExamples/pedicure1.jpg" alt="1" class="section-works-pedicure-example element-animation">
+                    <img src="./images/pedicureExamples/pedicure2.jpg" alt="2" class="section-works-pedicure-example element-animation">
+                    <img src="./images/pedicureExamples/pedicure3.jpg" alt="3" class="section-works-pedicure-example element-animation">
+                    <img src="./images/pedicureExamples/pedicure4.jpg" alt="4" class="section-works-pedicure-example element-animation">
+                    <img src="./images/pedicureExamples/pedicure5.jpg" alt="5" class="section-works-pedicure-example element-animation">
+                    <img src="./images/pedicureExamples/pedicure6.jpg" alt="6" class="section-works-pedicure-example element-animation">
+                    <img src="./images/pedicureExamples/pedicure7.jpg" alt="7" class="section-works-pedicure-example element-animation">
+                    <img src="./images/pedicureExamples/pedicure8.jpg" alt="8" class="section-works-pedicure-example element-animation">
+                    <img src="./images/pedicureExamples/pedicure9.jpg" alt="9" class="section-works-pedicure-example element-animation">
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer element-animation">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hub"><img src="./images/dilogo.png" alt="logo" loading="lazy" class="footer-image"
+                        width='200px' ;></a>
+
+
+                <div class="footer-contacts contact" id="contacts">
+                    <h4 class="footer-title ">
+                        Контакты
+                    </h4>
+                    <a href="tel:+79112983712" class="footer-info">+7 (911) 298-37-12</a>
+                    <a class="gis2 footer-info" href="https://2gis.ru/spb/branches/70000001069287144" target="_blank"
+                        rel="noopener noreferrer">Мы на карте</a>
+                </div>
+
+                <div class="footer-worktime">
+                    <h4 class="footer-title">
+                        Режим работы
+                    </h4>
+
+                    <h5 class="footer-info">
+                        C 10:00 до 22:00 (Пн-Вс)
+                    </h5>
+                </div>
+
+                <div class="footer-link contact">
+                    <h4 class="footer-title inst">
+                        Мы в Instagram
+                    </h4>
+
+                    <a href="/" target="_blank"><img src="./icons/instlogo.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+    integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+
+</html>
